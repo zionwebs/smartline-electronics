@@ -1,0 +1,2541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Smartline Electronics | Repairs & Power Solutions</title>
+
+<meta name="description"
+content="Smartline Electronics — independent electronics, electrical, machine and power equipment repair services.">
+
+<!-- PREMIUM FONTS -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link
+href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+rel="stylesheet">
+
+<style>
+
+/* =====================================================
+   BASE
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #05080d;
+    color: #f4f8fc;
+
+    font-family: "DM Sans", sans-serif;
+
+    line-height: 1.6;
+
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+.logo {
+    font-family: "Space Grotesk", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+:root {
+
+    --blue: #28b9ff;
+    --cyan: #6de0ff;
+
+    --green: #25d366;
+
+    --bg: #05080d;
+    --bg2: #080f17;
+
+    --card: #0c1621;
+
+    --border:
+        rgba(255,255,255,.09);
+
+    --muted: #8999a8;
+
+}
+
+
+/* =====================================================
+   SCROLLBAR
+===================================================== */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #05080d;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #183044;
+    border-radius: 20px;
+}
+
+
+/* =====================================================
+   NAVIGATION
+===================================================== */
+
+nav {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 999;
+
+    background:
+        rgba(5,8,13,.78);
+
+    backdrop-filter:
+        blur(18px);
+
+    border-bottom:
+        1px solid var(--border);
+
+}
+
+.nav-container {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding:
+        17px 24px;
+
+    display:
+        flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+.logo {
+
+    font-size: 22px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    color:
+        var(--blue);
+
+}
+
+.logo span {
+    color: white;
+}
+
+.nav-links {
+
+    display:
+        flex;
+
+    align-items: center;
+
+    gap: 27px;
+
+    list-style: none;
+
+}
+
+.nav-links a {
+
+    color:
+        #aebdca;
+
+    font-size:
+        14px;
+
+    font-weight:
+        600;
+
+    transition:
+        .25s;
+
+}
+
+.nav-links a:hover {
+
+    color:
+        var(--blue);
+
+}
+
+.nav-cta {
+
+    padding:
+        10px 16px;
+
+    background:
+        var(--blue);
+
+    color:
+        #031018 !important;
+
+    border-radius:
+        7px;
+
+    font-weight:
+        800 !important;
+
+}
+
+.menu {
+
+    display:
+        none;
+
+    font-size:
+        28px;
+
+    cursor:
+        pointer;
+
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero {
+
+    min-height:
+        100vh;
+
+    padding:
+        150px 25px 100px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    position:
+        relative;
+
+    background:
+
+        radial-gradient(
+            circle at 80% 20%,
+            rgba(40,185,255,.18),
+            transparent 32%
+        ),
+
+        radial-gradient(
+            circle at 10% 80%,
+            rgba(24,80,130,.12),
+            transparent 30%
+        ),
+
+        var(--bg);
+
+}
+
+.hero::after {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    inset:
+        0;
+
+    pointer-events:
+        none;
+
+    opacity:
+        .15;
+
+    background-image:
+
+        linear-gradient(
+            rgba(255,255,255,.03)
+            1px,
+            transparent 1px
+        ),
+
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,.03)
+            1px,
+            transparent 1px
+        );
+
+    background-size:
+        50px 50px;
+
+}
+
+.hero-container {
+
+    max-width:
+        1200px;
+
+    width:
+        100%;
+
+    margin:
+        auto;
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1.1fr .9fr;
+
+    gap:
+        70px;
+
+    align-items:
+        center;
+
+    position:
+        relative;
+
+    z-index:
+        1;
+
+}
+
+
+/* HERO TEXT */
+
+.hero-label {
+
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    gap:
+        9px;
+
+    color:
+        var(--cyan);
+
+    border:
+        1px solid
+        rgba(40,185,255,.28);
+
+    background:
+        rgba(40,185,255,.06);
+
+    padding:
+        8px 13px;
+
+    border-radius:
+        50px;
+
+    font-size:
+        12px;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        .6px;
+
+    margin-bottom:
+        22px;
+
+}
+
+.status-dot {
+
+    width:
+        7px;
+
+    height:
+        7px;
+
+    background:
+        var(--green);
+
+    border-radius:
+        50%;
+
+    box-shadow:
+        0 0 12px
+        var(--green);
+
+}
+
+.hero h1 {
+
+    font-size:
+        clamp(48px, 6.5vw, 82px);
+
+    line-height:
+        .96;
+
+    letter-spacing:
+        -4px;
+
+    margin-bottom:
+        26px;
+
+}
+
+.hero h1 span {
+
+    color:
+        var(--blue);
+
+}
+
+.hero-text {
+
+    max-width:
+        630px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        18px;
+
+    margin-bottom:
+        32px;
+
+}
+
+.hero-buttons {
+
+    display:
+        flex;
+
+    gap:
+        13px;
+
+    flex-wrap:
+        wrap;
+
+}
+
+.btn {
+
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    gap:
+        8px;
+
+    padding:
+        14px 21px;
+
+    border-radius:
+        8px;
+
+    font-weight:
+        800;
+
+    transition:
+        .25s;
+
+}
+
+.btn-primary {
+
+    background:
+        var(--blue);
+
+    color:
+        #021019;
+
+}
+
+.btn-primary:hover {
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 14px 35px
+        rgba(40,185,255,.22);
+
+}
+
+.btn-outline {
+
+    border:
+        1px solid
+        #2a4155;
+
+}
+
+.btn-outline:hover {
+
+    border-color:
+        var(--blue);
+
+    color:
+        var(--blue);
+
+}
+
+
+/* =====================================================
+   HERO DEVICE
+===================================================== */
+
+.hero-device {
+
+    height:
+        460px;
+
+    border-radius:
+        25px;
+
+    position:
+        relative;
+
+    overflow:
+        hidden;
+
+    background:
+        linear-gradient(
+            145deg,
+            #10273a,
+            #071019
+        );
+
+    border:
+        1px solid
+        var(--border);
+
+    display:
+        flex;
+
+    justify-content:
+        center;
+
+    align-items:
+        center;
+
+    box-shadow:
+        0 40px 100px
+        rgba(0,0,0,.35);
+
+}
+
+.hero-device::before {
+
+    content:
+        "";
+
+    width:
+        280px;
+
+    height:
+        280px;
+
+    border-radius:
+        50%;
+
+    background:
+        rgba(40,185,255,.15);
+
+    filter:
+        blur(2px);
+
+    position:
+        absolute;
+
+}
+
+.bolt {
+
+    position:
+        relative;
+
+    font-size:
+        145px;
+
+    filter:
+        drop-shadow(
+            0 0 35px
+            rgba(40,185,255,.75)
+        );
+
+    animation:
+        float 4s ease-in-out infinite;
+
+}
+
+@keyframes float {
+
+    0%,100% {
+        transform:
+            translateY(0);
+    }
+
+    50% {
+        transform:
+            translateY(-13px);
+    }
+
+}
+
+.device-label {
+
+    position:
+        absolute;
+
+    background:
+        rgba(3,9,15,.78);
+
+    border:
+        1px solid
+        rgba(255,255,255,.1);
+
+    backdrop-filter:
+        blur(12px);
+
+    padding:
+        12px 15px;
+
+    border-radius:
+        9px;
+
+    font-size:
+        12px;
+
+    font-weight:
+        700;
+
+}
+
+.label-one {
+
+    top:
+        22px;
+
+    left:
+        20px;
+
+}
+
+.label-two {
+
+    bottom:
+        22px;
+
+    right:
+        20px;
+
+}
+
+
+/* =====================================================
+   SECTION
+===================================================== */
+
+section {
+
+    padding:
+        100px 25px;
+
+}
+
+.container {
+
+    max-width:
+        1200px;
+
+    margin:
+        auto;
+
+}
+
+.section-head {
+
+    text-align:
+        center;
+
+    max-width:
+        700px;
+
+    margin:
+        0 auto 55px;
+
+}
+
+.eyebrow {
+
+    color:
+        var(--blue);
+
+    font-size:
+        12px;
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        1.5px;
+
+    margin-bottom:
+        10px;
+
+}
+
+.section-head h2 {
+
+    font-size:
+        clamp(32px,5vw,46px);
+
+    line-height:
+        1.05;
+
+    margin-bottom:
+        13px;
+
+}
+
+.section-head p {
+
+    color:
+        var(--muted);
+
+}
+
+
+/* =====================================================
+   SERVICES
+===================================================== */
+
+.services {
+
+    background:
+        var(--bg2);
+
+}
+
+.services-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:
+        18px;
+
+}
+
+.service {
+
+    padding:
+        28px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #0d1d2b,
+            #09141e
+        );
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius:
+        15px;
+
+    transition:
+        .3s;
+
+}
+
+.service:hover {
+
+    transform:
+        translateY(-7px);
+
+    border-color:
+        rgba(40,185,255,.4);
+
+}
+
+.service-icon {
+
+    font-size:
+        35px;
+
+    margin-bottom:
+        15px;
+
+}
+
+.service h3 {
+
+    font-size:
+        18px;
+
+    margin-bottom:
+        6px;
+
+}
+
+.service p {
+
+    color:
+        var(--muted);
+
+    font-size:
+        14px;
+
+}
+
+
+/* =====================================================
+   WHY
+===================================================== */
+
+.why {
+
+    background:
+        var(--bg);
+
+}
+
+.why-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:
+        70px;
+
+    align-items:
+        center;
+
+}
+
+.why h2 {
+
+    font-size:
+        clamp(35px,5vw,52px);
+
+    line-height:
+        1.05;
+
+}
+
+.why-description {
+
+    color:
+        var(--muted);
+
+    font-size:
+        17px;
+
+    margin-top:
+        18px;
+
+}
+
+.features {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:
+        12px;
+
+}
+
+.feature {
+
+    padding:
+        17px;
+
+    background:
+        #091521;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius:
+        9px;
+
+}
+
+.feature strong {
+
+    display:
+        block;
+
+    color:
+        var(--blue);
+
+    margin-bottom:
+        3px;
+
+}
+
+.feature small {
+
+    color:
+        var(--muted);
+
+}
+
+
+/* =====================================================
+   REQUEST
+===================================================== */
+
+.request {
+
+    background:
+
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(40,185,255,.09),
+            transparent 35%
+        ),
+
+        var(--bg2);
+
+}
+
+.form-box {
+
+    max-width:
+        850px;
+
+    margin:
+        auto;
+
+    padding:
+        40px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #0d1e2d,
+            #09141e
+        );
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius:
+        20px;
+
+    box-shadow:
+        0 35px 90px
+        rgba(0,0,0,.25);
+
+}
+
+.form-box h2 {
+
+    text-align:
+        center;
+
+    font-size:
+        34px;
+
+}
+
+.form-description {
+
+    text-align:
+        center;
+
+    color:
+        var(--muted);
+
+    margin:
+        6px 0 30px;
+
+}
+
+form {
+
+    display:
+        grid;
+
+    gap:
+        17px;
+
+}
+
+.form-row {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:
+        17px;
+
+}
+
+label {
+
+    display:
+        block;
+
+    color:
+        #d7e1e9;
+
+    font-size:
+        13px;
+
+    font-weight:
+        700;
+
+    margin-bottom:
+        7px;
+
+}
+
+input,
+select,
+textarea {
+
+    width:
+        100%;
+
+    padding:
+        14px;
+
+    background:
+        #06111b;
+
+    color:
+        white;
+
+    border:
+        1px solid
+        #263d51;
+
+    border-radius:
+        8px;
+
+    outline:
+        none;
+
+    font-size:
+        14px;
+
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+
+    border-color:
+        var(--blue);
+
+    box-shadow:
+        0 0 0 3px
+        rgba(40,185,255,.07);
+
+}
+
+textarea {
+
+    min-height:
+        140px;
+
+    resize:
+        vertical;
+
+}
+
+.submit {
+
+    width:
+        100%;
+
+    border:
+        none;
+
+    padding:
+        17px;
+
+    border-radius:
+        9px;
+
+    background:
+        var(--green);
+
+    color:
+        white;
+
+    font-size:
+        16px;
+
+    font-weight:
+        900;
+
+    cursor:
+        pointer;
+
+    transition:
+        .25s;
+
+}
+
+.submit:hover {
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 12px 30px
+        rgba(37,211,102,.18);
+
+}
+
+
+/* =====================================================
+   PROCESS
+===================================================== */
+
+.process {
+
+    background:
+        var(--bg);
+
+}
+
+.process-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:
+        20px;
+
+}
+
+.process-card {
+
+    text-align:
+        center;
+
+}
+
+.process-number {
+
+    width:
+        55px;
+
+    height:
+        55px;
+
+    margin:
+        0 auto 14px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    border-radius:
+        50%;
+
+    background:
+        var(--blue);
+
+    color:
+        #021019;
+
+    font-weight:
+        900;
+
+}
+
+.process-card p {
+
+    color:
+        var(--muted);
+
+    font-size:
+        14px;
+
+    margin-top:
+        5px;
+
+}
+
+
+/* =====================================================
+   CONTACT
+===================================================== */
+
+.contact {
+
+    background:
+        var(--bg2);
+
+}
+
+.contact-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:
+        18px;
+
+}
+
+.contact-card {
+
+    padding:
+        25px;
+
+    background:
+        #0b1926;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius:
+        13px;
+
+}
+
+.contact-card h3 {
+
+    margin-bottom:
+        5px;
+
+}
+
+.contact-card p {
+
+    color:
+        var(--muted);
+
+}
+
+.contact-card a:hover {
+
+    color:
+        var(--blue);
+
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+
+    padding:
+        42px 20px;
+
+    text-align:
+        center;
+
+    background:
+        #03070b;
+
+    border-top:
+        1px solid
+        var(--border);
+
+}
+
+footer p {
+
+    color:
+        #687a89;
+
+    margin-top:
+        6px;
+
+}
+
+
+/* =====================================================
+   WHATSAPP
+===================================================== */
+
+.whatsapp {
+
+    position:
+        fixed;
+
+    right:
+        20px;
+
+    bottom:
+        20px;
+
+    width:
+        60px;
+
+    height:
+        60px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    border-radius:
+        50%;
+
+    background:
+        var(--green);
+
+    font-size:
+        27px;
+
+    z-index:
+        998;
+
+    box-shadow:
+        0 8px 30px
+        rgba(0,0,0,.45);
+
+    transition:
+        .25s;
+
+}
+
+.whatsapp:hover {
+
+    transform:
+        scale(1.08);
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width:850px) {
+
+    .menu {
+
+        display:
+            block;
+
+    }
+
+    .nav-links {
+
+        position:
+            absolute;
+
+        top:
+            68px;
+
+        left:
+            0;
+
+        width:
+            100%;
+
+        display:
+            none;
+
+        flex-direction:
+            column;
+
+        padding:
+            24px;
+
+        background:
+            #05080d;
+
+        border-bottom:
+            1px solid
+            var(--border);
+
+    }
+
+    .nav-links.active {
+
+        display:
+            flex;
+
+    }
+
+    .nav-cta {
+
+        display:
+            none;
+
+    }
+
+    .hero-container,
+    .why-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+    .services-grid {
+
+        grid-template-columns:
+            1fr 1fr;
+
+    }
+
+    .process-grid {
+
+        grid-template-columns:
+            1fr 1fr;
+
+    }
+
+}
+
+@media(max-width:600px) {
+
+    section {
+
+        padding:
+            75px 18px;
+
+    }
+
+    .hero {
+
+        padding-top:
+            120px;
+
+    }
+
+    .hero h1 {
+
+        letter-spacing:
+            -2.5px;
+
+    }
+
+    .hero-device {
+
+        height:
+            320px;
+
+    }
+
+    .bolt {
+
+        font-size:
+            105px;
+
+    }
+
+    .services-grid,
+    .process-grid,
+    .form-row,
+    .contact-grid,
+    .features {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+    .form-box {
+
+        padding:
+            25px 18px;
+
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAV
+===================================================== -->
+
+<nav>
+
+<div class="nav-container">
+
+<a
+href="#home"
+class="logo">
+
+SMART<span>LINE</span>
+
+</a>
+
+
+<div
+class="menu"
+onclick="toggleMenu()">
+
+☰
+
+</div>
+
+
+<ul
+class="nav-links"
+id="navLinks">
+
+<li>
+<a href="#home">
+Home
+</a>
+</li>
+
+<li>
+<a href="#services">
+Services
+</a>
+</li>
+
+<li>
+<a href="#why">
+Why Us
+</a>
+</li>
+
+<li>
+<a href="#request">
+Request Repair
+</a>
+</li>
+
+<li>
+<a href="#contact">
+Contact
+</a>
+</li>
+
+<li>
+
+<a
+href="https://wa.me/254720410376"
+target="_blank"
+class="nav-cta">
+
+WhatsApp
+
+</a>
+
+</li>
+
+</ul>
+
+</div>
+
+</nav>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section
+class="hero"
+id="home">
+
+<div class="hero-container">
+
+
+<div>
+
+<div class="hero-label">
+
+<span class="status-dot"></span>
+
+INDEPENDENT REPAIR SERVICE
+
+</div>
+
+
+<h1>
+
+Powering.<br>
+
+<span>Fixing. Restoring.</span>
+
+</h1>
+
+
+<p class="hero-text">
+
+Smartline Electronics provides
+practical electronics, electrical,
+power and machine repair services —
+with direct communication from
+start to finish.
+
+</p>
+
+
+<div class="hero-buttons">
+
+<a
+href="#request"
+class="btn btn-primary">
+
+🔧 Request A Repair
+
+</a>
+
+
+<a
+href="https://wa.me/254720410376"
+target="_blank"
+class="btn btn-outline">
+
+💬 WhatsApp Us
+
+</a>
+
+</div>
+
+</div>
+
+
+<div class="hero-device">
+
+<div class="bolt">
+⚡
+</div>
+
+
+<div class="device-label label-one">
+
+⚙️ MACHINE REPAIRS
+
+</div>
+
+
+<div class="device-label label-two">
+
+⚡ POWER & ELECTRONICS
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     SERVICES
+===================================================== -->
+
+<section
+class="services"
+id="services">
+
+<div class="container">
+
+
+<div class="section-head">
+
+<div class="eyebrow">
+SERVICES
+</div>
+
+<h2>
+Technical Problems.
+Practical Solutions.
+</h2>
+
+<p>
+Repair and technical services for
+electronics, machines and power equipment.
+</p>
+
+</div>
+
+
+<div class="services-grid">
+
+
+<div class="service">
+
+<div class="service-icon">
+🔧
+</div>
+
+<h3>
+Machine Repairs
+</h3>
+
+<p>
+Troubleshooting and repair of machines,
+motors and powered equipment.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+⚡
+</div>
+
+<h3>
+Electrical Repairs
+</h3>
+
+<p>
+Electrical fault finding,
+repairs and troubleshooting.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+🔌
+</div>
+
+<h3>
+Power Equipment
+</h3>
+
+<p>
+Support and repair for
+power-related equipment.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+💻
+</div>
+
+<h3>
+Electronics Repair
+</h3>
+
+<p>
+Diagnosis and repair of
+electronic equipment.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+⚙️
+</div>
+
+<h3>
+Maintenance
+</h3>
+
+<p>
+Maintenance and troubleshooting
+to keep equipment working.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-icon">
+🛠️
+</div>
+
+<h3>
+Installation & Setup
+</h3>
+
+<p>
+Installation and setup assistance
+for suitable equipment.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     WHY US
+===================================================== -->
+
+<section
+class="why"
+id="why">
+
+<div class="container">
+
+
+<div class="why-grid">
+
+
+<div>
+
+<div class="eyebrow">
+WHY SMARTLINE
+</div>
+
+<h2>
+
+A direct,
+practical approach
+to repairs.
+
+</h2>
+
+<p class="why-description">
+
+Smartline Electronics is a
+self-employed repair business
+focused on solving technical
+problems and providing
+straightforward service.
+
+</p>
+
+</div>
+
+
+<div class="features">
+
+
+<div class="feature">
+
+<strong>
+✓ Direct Communication
+</strong>
+
+<small>
+Talk directly about your repair.
+</small>
+
+</div>
+
+
+<div class="feature">
+
+<strong>
+✓ Practical Diagnosis
+</strong>
+
+<small>
+Understand the problem first.
+</small>
+
+</div>
+
+
+<div class="feature">
+
+<strong>
+✓ Repair Focused
+</strong>
+
+<small>
+Focus on getting equipment working.
+</small>
+
+</div>
+
+
+<div class="feature">
+
+<strong>
+✓ Customer Focused
+</strong>
+
+<small>
+Clear communication throughout.
+</small>
+
+</div>
+
+
+<div class="feature">
+
+<strong>
+✓ Independent Service
+</strong>
+
+<small>
+Personal attention to each job.
+</small>
+
+</div>
+
+
+<div class="feature">
+
+<strong>
+✓ Flexible Requests
+</strong>
+
+<small>
+Tell us what needs attention.
+</small>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     REQUEST FORM
+===================================================== -->
+
+<section
+class="request"
+id="request">
+
+<div class="container">
+
+
+<div class="section-head">
+
+<div class="eyebrow">
+START A REPAIR
+</div>
+
+<h2>
+Tell Us What Needs Fixing.
+</h2>
+
+<p>
+Fill in the details and send the
+request directly through WhatsApp.
+</p>
+
+</div>
+
+
+<div class="form-box">
+
+
+<h2>
+🔧 Repair Request
+</h2>
+
+<p class="form-description">
+
+The more details you provide,
+the easier it is to understand the job.
+
+</p>
+
+
+<form id="repairForm">
+
+
+<div class="form-row">
+
+
+<div>
+
+<label>
+Your Name *
+</label>
+
+<input
+id="name"
+type="text"
+placeholder="Full name"
+required>
+
+</div>
+
+
+<div>
+
+<label>
+Phone Number *
+</label>
+
+<input
+id="phone"
+type="tel"
+placeholder="07XXXXXXXX"
+required>
+
+</div>
+
+
+</div>
+
+
+<div>
+
+<label>
+What needs repair? *
+</label>
+
+<select
+id="service"
+required>
+
+<option value="">
+Select service
+</option>
+
+<option>
+Machine Repair
+</option>
+
+<option>
+Electronics Repair
+</option>
+
+<option>
+Electrical Repair
+</option>
+
+<option>
+Power Equipment
+</option>
+
+<option>
+Maintenance
+</option>
+
+<option>
+Installation & Setup
+</option>
+
+<option>
+Other
+</option>
+
+</select>
+
+</div>
+
+
+<div>
+
+<label>
+Equipment / Machine *
+</label>
+
+<input
+id="equipment"
+type="text"
+placeholder="e.g. generator, motor, TV..."
+required>
+
+</div>
+
+
+<div>
+
+<label>
+Where is the equipment?
+</label>
+
+<input
+id="location"
+type="text"
+placeholder="Location / area">
+
+</div>
+
+
+<div>
+
+<label>
+Describe the problem *
+</label>
+
+<textarea
+id="problem"
+placeholder="Explain what is wrong with the equipment..."
+required></textarea>
+
+</div>
+
+
+<button
+class="submit"
+type="submit">
+
+📲 Send Repair Request
+
+</button>
+
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     PROCESS
+===================================================== -->
+
+<section
+class="process">
+
+<div class="container">
+
+
+<div class="section-head">
+
+<div class="eyebrow">
+THE PROCESS
+</div>
+
+<h2>
+Simple From Start To Finish.
+</h2>
+
+</div>
+
+
+<div class="process-grid">
+
+
+<div class="process-card">
+
+<div class="process-number">
+01
+</div>
+
+<h3>
+Request
+</h3>
+
+<p>
+Tell us what needs fixing.
+</p>
+
+</div>
+
+
+<div class="process-card">
+
+<div class="process-number">
+02
+</div>
+
+<h3>
+Discuss
+</h3>
+
+<p>
+Talk through the problem.
+</p>
+
+</div>
+
+
+<div class="process-card">
+
+<div class="process-number">
+03
+</div>
+
+<h3>
+Assess
+</h3>
+
+<p>
+Determine what the equipment needs.
+</p>
+
+</div>
+
+
+<div class="process-card">
+
+<div class="process-number">
+04
+</div>
+
+<h3>
+Repair
+</h3>
+
+<p>
+Carry out the agreed service.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+<section
+class="contact"
+id="contact">
+
+<div class="container">
+
+
+<div class="section-head">
+
+<div class="eyebrow">
+CONTACT
+</div>
+
+<h2>
+Let's Talk About Your Equipment.
+</h2>
+
+<p>
+Need a repair? Contact Smartline directly.
+</p>
+
+</div>
+
+
+<div class="contact-grid">
+
+
+<div class="contact-card">
+
+<h3>
+📞 Call
+</h3>
+
+<p>
+
+<a
+href="tel:+254720410376">
+
+0720 410 376
+
+</a>
+
+</p>
+
+</div>
+
+
+<div class="contact-card">
+
+<h3>
+💬 WhatsApp
+</h3>
+
+<p>
+
+<a
+href="https://wa.me/254720410376"
+target="_blank">
+
+Message Smartline Electronics
+
+</a>
+
+</p>
+
+</div>
+
+
+<div class="contact-card">
+
+<h3>
+📍 Service Area
+</h3>
+
+<p>
+Kenya
+</p>
+
+</div>
+
+
+<div class="contact-card">
+
+<h3>
+🛠️ Service
+</h3>
+
+<p>
+Electronics • Electrical • Machines • Power
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+<div class="logo">
+
+SMART<span>LINE</span>
+
+</div>
+
+<p>
+Electronics • Power • Repairs
+</p>
+
+<p>
+© 2026 Smartline Electronics
+</p>
+
+</footer>
+
+
+<!-- =====================================================
+     FLOATING WHATSAPP
+===================================================== -->
+
+<a
+href="https://wa.me/254720410376"
+target="_blank"
+class="whatsapp">
+
+💬
+
+</a>
+
+
+<script>
+
+/* MOBILE MENU */
+
+function toggleMenu() {
+
+    document
+        .getElementById("navLinks")
+        .classList
+        .toggle("active");
+
+}
+
+
+/* REPAIR FORM */
+
+document
+.getElementById("repairForm")
+.addEventListener(
+"submit",
+function(event) {
+
+    event.preventDefault();
+
+
+    const name =
+        document
+        .getElementById("name")
+        .value
+        .trim();
+
+
+    const phone =
+        document
+        .getElementById("phone")
+        .value
+        .trim();
+
+
+    const service =
+        document
+        .getElementById("service")
+        .value;
+
+
+    const equipment =
+        document
+        .getElementById("equipment")
+        .value
+        .trim();
+
+
+    const location =
+        document
+        .getElementById("location")
+        .value
+        .trim();
+
+
+    const problem =
+        document
+        .getElementById("problem")
+        .value
+        .trim();
+
+
+    const message =
+
+`🔧 SMARTLINE ELECTRONICS
+
+━━━━━━━━━━━━━━━━━━
+NEW REPAIR REQUEST
+━━━━━━━━━━━━━━━━━━
+
+👤 CUSTOMER
+
+Name:
+${name}
+
+Phone:
+${phone}
+
+🛠️ SERVICE
+
+${service}
+
+⚙️ EQUIPMENT
+
+${equipment}
+
+📍 LOCATION
+
+${location || "Not specified"}
+
+📝 PROBLEM
+
+${problem}
+
+━━━━━━━━━━━━━━━━━━
+Sent from Smartline Electronics website.`;
+
+
+    const whatsappNumber =
+        "254720410376";
+
+
+    const url =
+        "https://wa.me/" +
+        whatsappNumber +
+        "?text=" +
+        encodeURIComponent(message);
+
+
+    window.open(
+        url,
+        "_blank"
+    );
+
+});
+
+</script>
+
+
+</body>
+</html>
